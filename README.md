@@ -18,45 +18,55 @@ This project focuses on analyzing FIFA 21 player data to uncover key trends and 
 #### Task 1: Initial Data Exploration & Cleaning ✅
 - Checked for missing values.
 - Dropped irrelevant columns like `sofifa_id`, `dob`, and `player_url`.
-- Fixed issues with player names and ensured correct data types for columns.
+- Ensured correct data types for all columns.
 
 #### Task 2: Handling Missing Values & Imputation ✅
-- Filled missing values for goalkeeper stats with `0` for non-goalkeepers.
-- Marked missing club and league details for free agents as "Free Agent".
-- Dropped unnecessary columns like `contract_valid_until` and `release_clause_eur`.
-
+- Filled missing values for certain attributes based on context (e.g., `0` for non-goalkeepers).
+- Marked missing data for players without clubs as "Free Agent".
+  
 #### Task 3: Player Distribution & Summary Statistics ✅
-- Analyzed the distribution of key metrics such as `overall`, `potential`, `age`, `value_eur`, and `wage_eur`.
-- Created histograms and box plots for key attributes to explore trends and outliers.
-
+- Generated histograms and box plots for key metrics (`overall`, `potential`, `age`, etc.).
+  
 #### Task 4: Advanced Insights and Trend Analysis ✅
-- Calculated **potential_growth** to identify players with the highest growth potential.
-- Explored performance and value trends across different age groups.
-- Analyzed market value trends by position and highlighted high-value, low-overall players.
+- Calculated **potential growth** to determine which players are the most valuable based on future potential.
+- Analyzed **age group trends**, identifying performance peaks at specific ages.
+  
+#### Task 5: Position-Based Analysis ✅
+- Segmented players into **forwards, midfielders, and defenders**, analyzing key attributes that contribute to success for each position.
 
 ---
 
-### 📊 Visualizations Included
-- **Player Value Trends**: Line plots showing how player market value changes by age and position.
-- **Performance Distributions**: Box plots and histograms showing the distribution of key attributes.
-- **Player Growth Potential**: Radar charts highlighting players with high potential growth.
+### 📊 Key Findings:
+
+1. **Player Performance Insights:**
+   - Most players have an overall rating between 65-70, with few exceeding 80. 
+   - Players like M. Salah and R. Lewandowski provide excellent value based on performance compared to their market value. Meanwhile, players like K. Mbappé may be slightly overvalued.
+
+2. **Market Value Trends:**
+   - Players aged 24-31 have the highest market value, aligning with their peak performance years.
+   - Forwards and attacking midfielders generally command the highest market values.
+
+3. **Growth Potential:**
+   - Players like Richards and Arrey-Mbi show strong growth potential, offering significant long-term value.
+
+4. **Position-Specific Insights:**
+   - Forwards excel in pace and shooting.
+   - Midfielders dominate in passing.
+   - Defenders shine in defending and physicality metrics.
+
+5. **High-Value, Low-Overall Players:**
+   - Players like J. Bellingham (with an overall rating of 69) are still highly valued due to standout attributes like pace and dribbling.
 
 ---
 
-### 🚀 Next Steps:
-- **Feature Engineering**: Create new metrics like performance per value and future potential growth.
-- **Position-Specific Analysis**: Analyze the key attributes for each position to understand performance metrics better.
-- **Final Report & Visual Dashboard**: Summarize findings and present key visualizations in an easy-to-digest dashboard.
+### 📁 Project Structure:
+- `Business Requirements.docx` - Contains detailed tasks, objectives, and project goals.
+- `Fifa.ipynb` - Jupyter notebook with code and analysis.
+- `Summary of Key Findings.docx` - Contains detailed summary of findings.
 
 ---
 
-### 📁 Project Structure
-- `Business Requirements.docx` - Document outlining project objectives, tasks, and goals.
-- `Fifa.ipynb` - Jupyter notebook containing the full code and analysis.
-
----
-
-### 🔗 Connect with Me
+### 🔗 Connect with Me:
 - [GitHub](https://github.com/usmanumar97)
-- [LinkedIn](#) [(Osman Janjua)](https://www.linkedin.com/in/osman-janjua/)
+- [LinkedIn](https://www.linkedin.com/in/osman-janjua/)
 
